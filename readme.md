@@ -1,6 +1,9 @@
 # parcel-plugin-imagemin
 A parcel plugin for image minification
 
+## Affected image formats
+Currently supported extensions are `.jpg`, `.jpeg`, `.png`, `.gif`, `.svg`
+
 ## Installation
 ```bash
 yarn add parcel-plugin-imagemin -D
