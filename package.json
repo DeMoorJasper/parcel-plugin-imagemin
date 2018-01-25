@@ -1,12 +1,20 @@
 {
   "name": "parcel-plugin-imagemin",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.2",
+  "description": "Parcel plugin to support image minification",
   "main": "./lib/index.js",
   "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "parcel",
+    "image",
+    "minification"
+  ],
+  "author": "Jasper De Moor",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DeMoorJasper/parcel-plugin-imagemin.git"
+  },
+  "license": "MIT",
   "dependencies": {
     "imagemin": "^5.3.1",
     "imagemin-gifsicle": "^5.2.0",
