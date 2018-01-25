@@ -17,3 +17,6 @@ module.exports = {
   "quality": 50
 };
 ```
+
+## License
+MIT License
