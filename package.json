@@ -3,7 +3,9 @@
   "version": "0.0.6",
   "description": "Parcel plugin to support image minification",
   "main": "./lib/index.js",
-  "scripts": {},
+  "scripts": {
+    "build-example": "./node_modules/.bin/parcel build example/index.html --no-cache"
+  },
   "keywords": [
     "parcel",
     "image",
