@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html --no-cache",
-    "build": "parcel build index.html --no-cache",
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "clean-build": "rm -rf node_modules/ && yarn && yarn build"
   },
   "keywords": [],
