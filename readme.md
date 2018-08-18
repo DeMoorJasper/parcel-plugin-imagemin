@@ -32,7 +32,7 @@ module.exports = {
 }
 
 ```
-See imagemin's API for further information: https://github.com/imagemin/imagemin-svgo
+See imagemin's API for further information: https://github.com/imagemin
 
 ## License
 MIT License
