@@ -2,7 +2,7 @@ const assert = require('assert');
 const { setupBundler } = require('./utils');
 const assertBundleTree = require('parcel-assert-bundle-tree');
 const path = require('path');
-const fs = require('fs')
+const fs = require('fs-extra');
 
 describe('basic', function() {
   it('Should create a basic imagemin bundle', async function() {
