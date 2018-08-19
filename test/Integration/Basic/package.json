@@ -1,9 +1,0 @@
-{
-  "name": "parcel-plugin-example-imagemin",
-  "version": "2.0.0",
-  "description": "",
-  "main": "index.js",
-  "imagemin": {
-    "quality": 50
-  }
-}

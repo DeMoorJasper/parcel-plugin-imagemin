@@ -20,9 +20,19 @@ Image minification is only done on production builds so `parcel build ...`, this
 Configuration file used by this plugin is `imagemin.config.js`
 ```Javascript
 module.exports = {
-  "quality": 50
-};
+  "gifsicle": { "optimizationLevel": 2, "interlaced": false, "colors": 10 },
+  "mozjpeg": { "progressive": true, "quality": 10 },
+  "pngquant": { "quality": 10 },
+  "svgo": {
+    "plugins": [
+      { "removeViewBox": false },
+      { "cleanupIDs": true },
+    ]
+  }
+}
+
 ```
+See imagemin's API for further information: https://github.com/imagemin
 
 ## License
 MIT License
