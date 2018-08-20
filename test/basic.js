@@ -27,6 +27,9 @@ describe('basic', function() {
         },
         {
           type: 'svg'
+        },
+        {
+          type: 'webp'
         }
       ]
     });
@@ -49,5 +52,9 @@ describe('basic', function() {
     let originalGifImage = await fs.readFile(path.join(__dirname, './Integration/Basic/image1.gif'));
     let minifiedGifImage = await fs.readFile(Array.from(bundle.childBundles.values()).find(value => value.type === 'gif').name);
     assert(originalGifImage.byteLength > minifiedGifImage.byteLength);
+
+    let originalWebpImage = await fs.readFile(path.join(__dirname, './Integration/Basic/image5.webp'));
+    let minifiedWebpImage = await fs.readFile(Array.from(bundle.childBundles.values()).find(value => value.type === 'webp').name);
+    assert(originalWebpImage.byteLength > minifiedWebpImage.byteLength);
   });
 });
