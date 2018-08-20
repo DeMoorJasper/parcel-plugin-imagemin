@@ -2,7 +2,7 @@
 A parcel plugin for image minification
 
 ## Affected image formats
-Currently supported extensions are `.jpg`, `.jpeg`, `.png`, `.gif`, `.svg`
+Currently supported extensions are `.jpg`, `.jpeg`, `.png`, `.gif`, `.svg`, `.webp`
 
 ## Installation
 ```bash
@@ -28,7 +28,8 @@ module.exports = {
       { "removeViewBox": false },
       { "cleanupIDs": true },
     ]
-  }
+  },
+  "webp": { "quality": 10 },
 }
 
 ```
