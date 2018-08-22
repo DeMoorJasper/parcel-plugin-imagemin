@@ -1,4 +1,4 @@
-![Travis CI](https://travis-ci.org/DeMoorJasper/parcel-plugin-imagemin.svg?branch=master)
+[![Travis CI](https://travis-ci.org/DeMoorJasper/parcel-plugin-imagemin.svg?branch=master)](https://travis-ci.org/DeMoorJasper/parcel-plugin-imagemin)
 
 # parcel-plugin-imagemin
 A parcel plugin for image minification
