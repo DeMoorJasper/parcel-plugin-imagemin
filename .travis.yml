@@ -5,7 +5,5 @@ node_js:
   - '10'
 cache:
   yarn: true
-before_install:
-  - sudo apt-get install -y nasm
 script:
   - yarn test
