@@ -27,6 +27,9 @@ describe('basic', function() {
         },
         {
           type: 'svg'
+        },
+        {
+          type: 'jpg'
         }
       ]
     });
@@ -49,5 +52,9 @@ describe('basic', function() {
     let originalGifImage = await fs.readFile(path.join(__dirname, './Integration/Basic/image1.gif'));
     let minifiedGifImage = await fs.readFile(Array.from(bundle.childBundles.values()).find(value => value.type === 'gif').name);
     assert(originalGifImage.byteLength > minifiedGifImage.byteLength);
+
+    let originalJpgImage = await fs.readFile(path.join(__dirname, './Integration/Basic/images/image5.jpg'));
+    let minifiedJpgImage = await fs.readFile(Array.from(bundle.childBundles.values()).find(value => value.type === 'jpg').name);
+    assert(originalJpegImage.byteLength > minifiedJpegImage.byteLength);
   });
 });
