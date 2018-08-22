@@ -5,7 +5,6 @@ node_js:
 cache:
   yarn: true
 before_install:
-  - sudo apt-get install -y autoconf libtool pkg-config nasm build-essential
+  - sudo apt-get install -y nasm libpng16-dev
 script:
   - yarn test
-sudo: false
