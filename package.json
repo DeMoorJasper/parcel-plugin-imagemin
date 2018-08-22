@@ -23,7 +23,8 @@
     "imagemin-mozjpeg": "^7.0.0",
     "imagemin-pngquant": "^5.0.1",
     "imagemin-svgo": "^6.0.0",
-    "parcel-bundler": "^1.5.0"
+    "parcel-bundler": "^1.5.0",
+    "mkdirp": "^0.5.1"
   },
   "devDependencies": {
     "fs-extra": "^7.0.0",
