@@ -4,3 +4,6 @@ node_js:
   - '10'
 cache:
   yarn: true
+script:
+  - yarn test
+sudo: false
