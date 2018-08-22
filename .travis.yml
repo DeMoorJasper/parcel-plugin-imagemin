@@ -3,7 +3,5 @@ os: osx
 node_js:
   - '8'
   - '10'
-cache:
-  yarn: true
 script:
-  - yarn test
+  - npm run test
