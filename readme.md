@@ -30,7 +30,8 @@ module.exports = {
       { "removeViewBox": false },
       { "cleanupIDs": true },
     ]
-  }
+  },
+  "webp": { "quality": 10 }
 }
 
 ```
