@@ -73,4 +73,12 @@ describe('basic', function() {
     let minifiedWebpImage = await fs.readFile(Array.from(bundle.childBundles.values()).find(value => value.type === 'webp').name);
     assert(originalWebpImage.byteLength > minifiedWebpImage.byteLength);
   });
+
+  it('Should work in development', async function() {
+    this.timeout(0);
+    const bundler = await setupBundler(path.join(__dirname, './Integration/Basic/index.html'), {
+      production: false
+    });
+    await bundler.bundle();
+  });
 });
