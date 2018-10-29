@@ -20,9 +20,6 @@ describe('basic', function() {
           type: 'gif'
         },
         {
-          type: 'png'
-        },
-        {
           type: 'jpeg'
         },
         {
@@ -33,6 +30,17 @@ describe('basic', function() {
         },
         {
           type: 'webp'
+        },
+        {
+          type: 'js',
+          childBundles: [
+            {
+              type: 'png'
+            },
+            {
+              type: 'map'
+            }
+          ]
         }
       ]
     });
@@ -45,7 +53,8 @@ describe('basic', function() {
     assert(svgOutput.includes('viewBox'));
 
     let originalPngImage = await fs.readFile(path.join(__dirname, './Integration/Basic/image2.png'));
-    let minifiedPngImage = await fs.readFile(Array.from(bundle.childBundles.values()).find(value => value.type === 'png').name);
+    let jsBundle = Array.from(bundle.childBundles.values()).find(value => value.type === 'js');
+    let minifiedPngImage = await fs.readFile(Array.from(jsBundle.childBundles.values()).find(value => value.type === 'png').name);
     assert(originalPngImage.byteLength > minifiedPngImage.byteLength);
 
     let originalJpegImage = await fs.readFile(path.join(__dirname, './Integration/Basic/image3.jpeg'));
@@ -58,10 +67,18 @@ describe('basic', function() {
 
     let originalJpgImage = await fs.readFile(path.join(__dirname, './Integration/Basic/images/image5.jpg'));
     let minifiedJpgImage = await fs.readFile(Array.from(bundle.childBundles.values()).find(value => value.type === 'jpg').name);
-    assert(originalJpegImage.byteLength > minifiedJpegImage.byteLength);
+    assert(originalJpgImage.byteLength > minifiedJpgImage.byteLength);
 
     let originalWebpImage = await fs.readFile(path.join(__dirname, './Integration/Basic/image6.webp'));
     let minifiedWebpImage = await fs.readFile(Array.from(bundle.childBundles.values()).find(value => value.type === 'webp').name);
     assert(originalWebpImage.byteLength > minifiedWebpImage.byteLength);
+  });
+
+  it('Should work in development', async function() {
+    this.timeout(0);
+    const bundler = await setupBundler(path.join(__dirname, './Integration/Basic/index.html'), {
+      production: false
+    });
+    await bundler.bundle();
   });
 });
