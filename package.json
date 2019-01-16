@@ -1,6 +1,6 @@
 {
   "name": "parcel-plugin-imagemin",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Parcel plugin to support image minification",
   "main": "./lib/index.js",
   "scripts": {
