@@ -7,7 +7,7 @@
   "author": "Jasper De Moor",
   "scripts": {
     "test": "mocha --timeout 50000",
-    "format": "prettier --write \"./lib/**/*.{js,json,md}\""
+    "format": "prettier --write \"./{lib,test}/**/*.{js,json,md}\""
   },
   "repository": {
     "type": "git",
