@@ -1,3 +1,3 @@
-const imageTwo = require("./image2.png");
+const imageTwo = require('./image2.png');
 
 console.log(imageTwo);
