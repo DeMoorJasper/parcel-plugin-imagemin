@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/DeMoorJasper/parcel-plugin-imagemin/_apis/build/status/DeMoorJasper.parcel-plugin-imagemin?branchName=master)](https://dev.azure.com/DeMoorJasper/parcel-plugin-imagemin/_build/latest?definitionId=4&branchName=master)
+
 # parcel-plugin-imagemin
 
 A parcel plugin for image minification
