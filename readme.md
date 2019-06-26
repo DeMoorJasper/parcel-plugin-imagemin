@@ -4,6 +4,8 @@
 
 A parcel plugin for image minification
 
+⚠️ Note: This Plugin does not support Node 6
+
 ## Affected image formats
 
 Currently supported extensions are `.jpg`, `.jpeg`, `.png`, `.gif`, `.svg`

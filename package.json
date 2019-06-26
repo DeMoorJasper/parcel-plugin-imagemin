@@ -13,6 +13,9 @@
     "type": "git",
     "url": "git://github.com/DeMoorJasper/parcel-plugin-imagemin.git"
   },
+  "engines": {
+    "node": ">= 8.0.0"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
