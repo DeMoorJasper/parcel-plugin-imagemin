@@ -33,7 +33,7 @@
     "fs-extra": "^8.0.1",
     "imagemin": "^6.1.0",
     "imagemin-gifsicle": "^6.0.1",
-    "imagemin-mozjpeg": "^7.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^8.0.0",
     "imagemin-svgo": "^6.0.0",
     "imagemin-webp": "^5.1.0",
