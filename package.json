@@ -34,7 +34,7 @@
   ],
   "dependencies": {
     "fs-extra": "^8.0.1",
-    "imagemin": "^6.1.0",
+    "imagemin": "^7.0.0",
     "imagemin-gifsicle": "^6.0.1",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^8.0.0",
