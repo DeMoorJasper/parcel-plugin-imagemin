@@ -40,7 +40,7 @@
     "imagemin-pngquant": "^8.0.0",
     "imagemin-svgo": "^7.0.0",
     "imagemin-webp": "^5.1.0",
-    "parcel-bundler": "^1.10.3"
+    "parcel": "^1.10.3"
   },
   "devDependencies": {
     "husky": "^3.0.5",
