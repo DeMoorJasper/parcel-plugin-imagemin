@@ -43,7 +43,7 @@
     "parcel-bundler": "^1.10.3"
   },
   "devDependencies": {
-    "husky": "^3.0.5",
+    "husky": "^4.0.7",
     "lint-staged": "^9.2.4",
     "mocha": "^6.1.4",
     "parcel-assert-bundle-tree": "^1.0.0",
