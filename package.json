@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "husky": "^3.0.5",
-    "lint-staged": "^9.2.4",
+    "lint-staged": "^10.0.6",
     "mocha": "^6.1.4",
     "parcel-assert-bundle-tree": "^1.0.0",
     "prettier": "^1.16.4"
