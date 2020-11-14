@@ -33,20 +33,20 @@
     "minification"
   ],
   "dependencies": {
-    "fs-extra": "^8.0.1",
-    "imagemin": "^7.0.0",
-    "imagemin-gifsicle": "^6.0.1",
-    "imagemin-mozjpeg": "^8.0.0",
-    "imagemin-pngquant": "^8.0.0",
-    "imagemin-svgo": "^7.0.0",
-    "imagemin-webp": "^5.1.0",
-    "parcel-bundler": "^1.10.3"
+    "fs-extra": "^9.0.1",
+    "imagemin": "^7.0.1",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.1",
+    "imagemin-svgo": "^8.0.0",
+    "imagemin-webp": "^6.0.0"
   },
   "devDependencies": {
-    "husky": "^3.0.5",
-    "lint-staged": "^9.2.4",
-    "mocha": "^6.1.4",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.1",
+    "mocha": "^8.2.1",
     "parcel-assert-bundle-tree": "^1.0.0",
-    "prettier": "^1.16.4"
+    "prettier": "^2.1.2",
+    "parcel-bundler": "^1.12.4"
   }
 }
